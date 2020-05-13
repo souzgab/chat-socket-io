@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Chater</title>
+</head>
+<body>
+    <form id="chat">
+        <input type="text" name="username" placeholder="Seu usuário">
+        <div class="messages"></div>
+        <input type="text" name="message" placeholder="Sua mensagem">
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <script type="text/javascript">
+        var socket = io('http://localhost:3003');
+    </script>
+</body>
+</html>
